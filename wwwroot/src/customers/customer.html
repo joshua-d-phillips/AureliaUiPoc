@@ -1,0 +1,52 @@
+﻿<template>
+
+    <div class="container-fluid">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th><h3>${customer.companyProfile.names.legalName}</h3></th>
+                    <th><h3>${customer.customerId}</h3></th>
+                    <th><h3>Organization</h3></th>
+                </tr>
+            </thead>
+        </table>
+
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="jumbotron">
+                    <div><strong>Customer Id:</strong> ${customer.customerId}</div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="alert alert-dismissible alert-info">
+                            <div><strong>Billing</strong></div>
+                            <div><strong>Line 1:</strong> ${customer.companyProfile.address.billing.line1}</div>
+                            <div><strong>Line 2:</strong> ${customer.companyProfile.address.billing.line2}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="alert alert-dismissible alert-info">
+                            <div><strong>Physical</strong></div>
+                            <div><strong>Line 1:</strong> ${customer.companyProfile.address.physical.line1}</div>
+                            <div><strong>Line 2:</strong> ${customer.companyProfile.address.physical.line2}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Customer History</h3>
+                <div class="jumbotron">
+                    <div><strong>Customer Id:</strong> ${customer.customerId}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</template>

@@ -1,0 +1,10 @@
+C:\projects\POC\Rubicon.UI.Aurelia\bin\Release\netcoreapp2.0\Rubicon.UI.Aurelia.deps.json
+C:\projects\POC\Rubicon.UI.Aurelia\bin\Release\netcoreapp2.0\Rubicon.UI.Aurelia.runtimeconfig.json
+C:\projects\POC\Rubicon.UI.Aurelia\bin\Release\netcoreapp2.0\Rubicon.UI.Aurelia.runtimeconfig.dev.json
+C:\projects\POC\Rubicon.UI.Aurelia\bin\Release\netcoreapp2.0\Rubicon.UI.Aurelia.dll
+C:\projects\POC\Rubicon.UI.Aurelia\bin\Release\netcoreapp2.0\Rubicon.UI.Aurelia.pdb
+C:\projects\POC\Rubicon.UI.Aurelia\obj\Release\netcoreapp2.0\Rubicon.UI.Aurelia.csproj.CoreCompileInputs.cache
+C:\projects\POC\Rubicon.UI.Aurelia\obj\Release\netcoreapp2.0\Rubicon.UI.Aurelia.AssemblyInfoInputs.cache
+C:\projects\POC\Rubicon.UI.Aurelia\obj\Release\netcoreapp2.0\Rubicon.UI.Aurelia.AssemblyInfo.cs
+C:\projects\POC\Rubicon.UI.Aurelia\obj\Release\netcoreapp2.0\Rubicon.UI.Aurelia.dll
+C:\projects\POC\Rubicon.UI.Aurelia\obj\Release\netcoreapp2.0\Rubicon.UI.Aurelia.pdb

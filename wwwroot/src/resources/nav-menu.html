@@ -1,0 +1,36 @@
+﻿<template>
+
+    <require from="../../styles/glyphIcon.css"></require>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">
+                    Aurelia UI POC
+                </a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <div class="form-group">
+                        <!-- Borrowed search field and icon styling from... 
+                            https://bootsnipp.com/snippets/featured/support-glyph-and-fa-icon-inside-input 
+                        -->
+                        <div class="icon-addon addon-sm">
+                            <input type="text" placeholder="Search" class="form-control" id="search">
+                            <label for="search" class="glyphicon glyphicon-search" rel="tooltip" title="search"></label>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown ${ dropdownOpen ? 'open' : '' }">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" click.trigger="toggleDropdown()"><i class="fa fa-bars"></i> Menu <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li repeat.for="row of router.navigation" click.delegate="navigateDropdown(row.href)">
+                            <a>${row.title}</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</template>

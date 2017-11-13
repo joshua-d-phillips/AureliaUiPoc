@@ -1,0 +1,12 @@
+C:\projects\POC\Rubicon.UI.Aurelia\bin\Debug\netcoreapp2.0\manifest.sandbox.yml
+C:\projects\POC\Rubicon.UI.Aurelia\bin\Debug\netcoreapp2.0\AureliaUiPoc.deps.json
+C:\projects\POC\Rubicon.UI.Aurelia\bin\Debug\netcoreapp2.0\AureliaUiPoc.runtimeconfig.json
+C:\projects\POC\Rubicon.UI.Aurelia\bin\Debug\netcoreapp2.0\AureliaUiPoc.runtimeconfig.dev.json
+C:\projects\POC\Rubicon.UI.Aurelia\bin\Debug\netcoreapp2.0\AureliaUiPoc.dll
+C:\projects\POC\Rubicon.UI.Aurelia\bin\Debug\netcoreapp2.0\AureliaUiPoc.pdb
+C:\projects\POC\Rubicon.UI.Aurelia\obj\Debug\netcoreapp2.0\AureliaUiPoc.csprojResolveAssemblyReference.cache
+C:\projects\POC\Rubicon.UI.Aurelia\obj\Debug\netcoreapp2.0\AureliaUiPoc.csproj.CoreCompileInputs.cache
+C:\projects\POC\Rubicon.UI.Aurelia\obj\Debug\netcoreapp2.0\AureliaUiPoc.AssemblyInfoInputs.cache
+C:\projects\POC\Rubicon.UI.Aurelia\obj\Debug\netcoreapp2.0\AureliaUiPoc.AssemblyInfo.cs
+C:\projects\POC\Rubicon.UI.Aurelia\obj\Debug\netcoreapp2.0\AureliaUiPoc.dll
+C:\projects\POC\Rubicon.UI.Aurelia\obj\Debug\netcoreapp2.0\AureliaUiPoc.pdb
