@@ -69,6 +69,16 @@ System.config({
 }
 ```
 
+## Style
+
+Using Twitter Bootstrap and the free Cerulean theme from https://bootswatch.com/3/cerulean/
+
+Also using Font Awesome along with a style for an input box with a search image from https://bootsnipp.com/snippets/featured/support-glyph-and-fa-icon-inside-input
+
+## Plugins
+
+Using Aurelia's Http-Client (see /src/customers/customerData.js) and Validation (see /src/customers/search.js and search.html) plugins
+
 ---
 
 ### Notes

@@ -7,7 +7,7 @@
                 <span repeat.for="errorInfo of customerIdErrors">
                     ${errorInfo.error.message}
                 </span>
-                <input id="customerId" type="text" placeholder="Customer Id" class="form-control" value.bind="id & validate" />
+                <input id="customerId" type="number" placeholder="Customer Id" class="form-control" value.bind="id & validate" />
             </div>
         </div>
         <div class="form-group">
