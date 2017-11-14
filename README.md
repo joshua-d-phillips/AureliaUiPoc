@@ -77,7 +77,9 @@ Also using Font Awesome along with a style for an input box with a search image 
 
 ## Plugins
 
-Using Aurelia's Http-Client (see /src/customers/customerData.js) and Validation (see /src/customers/search.js and search.html) plugins
+Using Aurelia's Http-Client (see /src/customers/customerData.js) and Validation (see /src/customers/search.js and search.html) plugins.
+
+Add the plugins using `jspm install aurelia-http-client aurelia-validation`
 
 ---
 

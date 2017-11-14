@@ -19,4 +19,8 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="**\jspm_packages\**" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+
 </Project>
