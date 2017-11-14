@@ -11,3 +11,5 @@ applications:
   path: .
   timeout: 80
   host: aurelia-ui-poc-sandbox
+  env:
+    RUBICON_API_ENDPOINT: https://rubicon-api-sandbox.cfapps.pcf1.vc1.pcf.dell.com

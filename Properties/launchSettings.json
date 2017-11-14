@@ -19,7 +19,8 @@
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "RUBICON_API_ENDPOINT": "http://localhost:42000/api/v2/customers"
       },
       "applicationUrl": "http://localhost:57966/"
     }

@@ -1,30 +1,19 @@
 ﻿import { inject } from "aurelia-framework";
 import { HttpClient } from "aurelia-http-client";
+import { CustomersApiUrlLoader } from "./CustomersApiUrlLoader";
 
-let baseUrl = "http://localhost:42000/api/v2/customers";
 
-@inject(HttpClient)
+@inject(HttpClient, CustomersApiUrlLoader)
 export class CustomerData {
-    constructor(httpClient) {
+    constructor(httpClient, customersApiUrlLoader) {
         this.http = httpClient;
+        this.urlLoader = customersApiUrlLoader;
     }
 
     getCustomer(customerId) {
-        return this.http.get(`${baseUrl}/${customerId}`)
-            .then(response => {
-                return response.content;
-            });
-    }
-
-    searchCustomer(terms) {
-        var request = this.http.createRequest();
-
-        request.asPut()
-            .withUrl(baseUrl)
-            .withHeader("Accept", "application/json")
-            .withHeader("Content-Type", "application/json")
-            .withContent(terms);
-
-        return request.send().then(response => response.content);
+        return this.urlLoader.getUrl()
+            .then(response => { return response; })
+            .then(response => this.http.get(`${response}/${customerId}`))
+            .then(response => { return response.content; });
     }
 }
