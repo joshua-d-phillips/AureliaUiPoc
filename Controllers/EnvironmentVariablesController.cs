@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace AureliaUiPoc.Controllers {
-	[Route ("api/[controller]")]
+	[Route ("[controller]")]
 	public class EnvironmentVariablesController : Controller {
 		[HttpGet ("{key}")]
 		public async Task<IActionResult> Get (string key) =>

@@ -1,6 +1,14 @@
 ﻿<template>
 
-    <div class="container-fluid">
+    <div class="container-fluid" if.bind="!hasCustomer">
+
+        <h3>No matching customer was found.</h3>
+
+    </div>
+
+    <div class="container-fluid" if.bind="hasCustomer">
+
+        <h3 if.bind="!hasCustomer">No matching customer was found.</h3>
 
         <table class="table">
             <thead>
@@ -25,6 +33,7 @@
                             <div><strong>Billing</strong></div>
                             <div><strong>Line 1:</strong> ${customer.companyProfile.address.billing.line1}</div>
                             <div><strong>Line 2:</strong> ${customer.companyProfile.address.billing.line2}</div>
+                            <div><strong>Not a Prop:</strong> ${customer.companyProfile.address.billing.notAProp}</div>
                         </div>
                     </div>
                 </div>

@@ -3,6 +3,7 @@ import { HttpClient } from "aurelia-http-client";
 
 let url = null;
 let urlLoaded = false;
+let urlError = null;
 
 @inject(HttpClient)
 export class CustomersApiUrlLoader {
@@ -12,7 +13,7 @@ export class CustomersApiUrlLoader {
 
     getUrl() {
         if (!urlLoaded) {
-            return this.http.get("/api/environmentVariables/RUBICON_API_ENDPOINT")
+            return this.http.get("/environmentVariables/RUBICON_API_ENDPOINT")
                 .then(response => {
                     url = response.content.value;
                     urlLoaded = true;
@@ -22,13 +23,15 @@ export class CustomersApiUrlLoader {
                 .catch(err => {
                     urlLoaded = true;
 
-                    console.log(err.content);
+                    urlError = err.content;
+
+                    console.log(urlError);
                 });
         } else {
             if (url != null)
                 return Promise.resolve(url);
             else
-                return Promise.reject("Url")
+                return Promise.reject(urlError)
         }
     }
 }
