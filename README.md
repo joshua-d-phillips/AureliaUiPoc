@@ -81,6 +81,26 @@ Using Aurelia's Http-Client (see /src/customers/customerData.js) and Validation 
 
 Add the plugins using `jspm install aurelia-http-client aurelia-validation`
 
+## Reading Environment Variables
+PCF does not support static file applications reading environment variables. Needed to find a solution to allow the UI to call the API regardless of the deployed environment.
+
+Tried multiple methods like using location includes in the nginx config and replacing the nginx config outright with no success.
+
+Node.js has a method using process.env, but that requires running a Node.js app.
+
+There is a cfenv package that is supposed to provide access to the VCAP_Application and VCAP_Services environment variables, but I was not able to get that working.
+
+Added an api controller that supports the get method and takes a single string argument to specify the name of the environment variable to read. It returns the value of that env var.
+Included a CustomerApiUrlLoader class that calls the controller to retrieve the environment variable value for the Rubicon API endpoint.
+
+Added the following routes in the sandbox space to get around the CORS limitation on host name and port.
+UI  -> https://rubicon-sandbox.cfapps.pcf1.vc1.pcf.dell.com
+API -> https://rubicon-sandbox.cfapps.pcf1.vc1.pcf.dell.com/api
+
+See https://docs.cloudfoundry.org/devguide/deploy-apps/routes-domains.html#create-route for more info
+
+Adding these additional routes that use the same host and domain but use different paths for routing allow the UI to call to the API and avoid CORS policies and it allows the call to be made with a relative path like "/api/v2/customers" since they are using the same host and domain names further simplifying how to reach the api from the UI without having to know about where it is deployed or using environment variables.
+
 ---
 
 ### Notes
